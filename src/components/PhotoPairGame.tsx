@@ -134,7 +134,7 @@ export default function PhotoPairGame({
             {/* Front of the card (image) */}
             {(selected.includes(index) || matched.includes(index)) && (
               <motion.div
-                className="w-full h-full absolute"
+                className="w-12 sm:w-full h-full absolute"
                 initial={{ rotateY: -180 }}
                 animate={{ rotateY: 0 }}
                 transition={{ duration: 0.5 }}

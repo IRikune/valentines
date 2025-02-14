@@ -91,7 +91,7 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Congratulations! You have completed the game.
+            Felicidades corazón, has ganado el juego!
           </motion.h2>
         )}
         {step === 1 && (
@@ -103,7 +103,7 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            I have a surprise for you!
+            Tengo una sorpresa para tí!
           </motion.h2>
         )}
         {step === 2 && (
@@ -132,7 +132,7 @@ export default function ValentinesProposal() {
             <h2
               className={`text-5xl font-semibold mb-8 ${playfairDisplay.className}`}
             >
-              Will you be my Valentine?
+              Quieres ser mi San Valentín?
             </h2>
             <Image
               src="/sad_hamster.png"
@@ -145,22 +145,22 @@ export default function ValentinesProposal() {
                 className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 onClick={handleYesClick}
               >
-                Yes, I will! 🥰
+                Sí, lo haré! 🥰
               </button>
               <button
                 className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl hover:from-gray-600 hover:to-gray-700 transform hover:scale-95 transition-all duration-300 shadow-lg"
                 style={
                   position
                     ? {
-                        position: "absolute",
-                        top: position.top,
-                        left: position.left,
-                      }
+                      position: "absolute",
+                      top: position.top,
+                      left: position.left,
+                    }
                     : {}
                 }
                 onMouseEnter={() => setPosition(getRandomPosition())}
               >
-                No, I won&apos;t 😢
+                No, no lo haré 😢
               </button>
             </div>
           </motion.div>
@@ -174,8 +174,8 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Thank you for accepting, I love you! 💕
-            <p className="text-sm mt-4">For more information, write me!!! 💌</p>
+            Gracias por aceptar, Te amoooo! 💕
+            <p className="text-sm mt-4">Te espero para comerte a besos, ¡escribeme!!!</p>
             <Image
               src="/hamster_jumping.gif"
               alt="Hamster Feliz"
